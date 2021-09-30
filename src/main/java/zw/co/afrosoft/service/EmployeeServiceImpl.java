@@ -1,6 +1,7 @@
 package zw.co.afrosoft.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import zw.co.afrosoft.domain.Employee;
 import zw.co.afrosoft.domain.dto.request.EmployeeRequest;
 import zw.co.afrosoft.domain.dto.response.MessageResponse;
@@ -8,7 +9,7 @@ import zw.co.afrosoft.persistence.EmployeeRepository;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class EmployeeServiceImpl  implements EmployeeService {
     @Autowired
     EmployeeRepository employeeRepository;

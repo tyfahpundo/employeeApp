@@ -1,13 +1,13 @@
 package zw.co.afrosoft.service;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import zw.co.afrosoft.domain.Employee;
 import zw.co.afrosoft.domain.dto.request.EmployeeRequest;
 import zw.co.afrosoft.domain.dto.response.MessageResponse;
 
 import java.util.List;
 import java.util.Optional;
-
 @Component
 public interface EmployeeService {
     MessageResponse createEmployee(EmployeeRequest employeeRequest);
